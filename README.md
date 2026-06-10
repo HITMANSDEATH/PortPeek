@@ -22,6 +22,7 @@ Run the scanner by providing a target IP or domain:
 ```
 python scanner.py 127.0.0.1 -p 1-1024 -t 100
 ```
+
 ## Options
 
 - **target:** The IP address or hostname to scan.
@@ -40,5 +41,8 @@ python scanner.py 127.0.0.1 -p 1-1024 -t 100
 - **Networking:** Utilizes the socket library to initiate TCP connections (the 3-way handshake) to verify if a port is listening.
  
 - **Optimization:** By using daemonized threads and a Queue.join() mechanism, the tool ensures clean execution and instant resource cleanup upon completion.
+
   
-Disclaimer: This tool is intended for educational and authorized security auditing purposes only. Use only on networks and devices you own or have explicit permission to scan.
+## Disclaimer
+
+This tool is intended for educational and authorized security auditing purposes only. Use only on networks and devices you own or have explicit permission to scan.
